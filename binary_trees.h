@@ -39,5 +39,10 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+binary_tree_t** createQueue(int* front, int* rear);
+void enQueue(binary_tree_t** queue, int* rear, binary_tree_t* new_node);
+binary_tree_t* deQueue(binary_tree_t** queue, int* front);
 
 #endif /* _BINARY_TREES_H_ */
